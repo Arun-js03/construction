@@ -17,7 +17,6 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative w-full bg-[#f8f9fa] overflow-hidden min-h-[580px] lg:min-h-[720px] flex items-center">
-      {/* Slide 1 View */}
       {currentSlide === 0 && (
         <div className="relative w-full h-full py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hidden lg:block absolute -top-12 right-24 w-[500px] h-[750px] bg-[#f4c03b]/25 transform -skew-x-[28deg] pointer-events-none z-0" />
@@ -88,7 +87,6 @@ export const Hero: React.FC = () => {
         </div>
       )}
 
-      {/* Slide 2 View */}
       {currentSlide === 1 && (
         <div
           className="relative w-full h-full py-24 lg:py-36 bg-cover bg-center flex items-center"
@@ -125,7 +123,6 @@ export const Hero: React.FC = () => {
         </div>
       )}
 
-      {/* Slider Navigation Arrows */}
       <div className="absolute bottom-6 right-6 lg:bottom-12 lg:right-12 z-20 flex items-center space-x-2">
         <button
           onClick={() => setCurrentSlide(currentSlide === 0 ? 1 : 0)}
@@ -143,7 +140,6 @@ export const Hero: React.FC = () => {
         </button>
       </div>
 
-      {/* Video Modal */}
       {isVideoModalOpen && (
         <div
           className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-fadeIn"

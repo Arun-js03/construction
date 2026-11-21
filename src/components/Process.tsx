@@ -6,7 +6,6 @@ export const Process: React.FC = () => {
     <section id="process" className="py-20 lg:py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Content / Step Breakdown */}
           <div className="lg:col-span-7 space-y-8">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-[#6b829d] mb-2 block">
@@ -20,7 +19,6 @@ export const Process: React.FC = () => {
               </p>
             </div>
 
-            {/* Steps list */}
             <div className="space-y-6">
               {PROCESS_STEPS.map((step) => (
                 <div
@@ -43,7 +41,6 @@ export const Process: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Image */}
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <img
@@ -58,7 +55,6 @@ export const Process: React.FC = () => {
               <div className="absolute inset-0 bg-[#243344]/20 pointer-events-none" />
             </div>
 
-            {/* Decorative bottom corner box */}
             <div className="absolute -bottom-6 -left-6 bg-[#243344] text-white p-6 rounded-sm shadow-xl hidden sm:block max-w-[200px]">
               <div className="text-xs uppercase tracking-widest text-[#f4c03b] font-bold">Guaranteed</div>
               <div className="text-xl font-bold mt-1">100% On-Time Delivery</div>

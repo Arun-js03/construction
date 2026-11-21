@@ -11,9 +11,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#243344] text-gray-300 pt-16 pb-8 border-t-4 border-[#f4c03b]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Widgets */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          {/* Widget 1: Company Info */}
           <div className="space-y-4">
             <img
               src="https://xtratheme.com/elementor/construction-2/wp-content/uploads/sites/41/2020/01/footer-logo-construction.png"
@@ -69,7 +67,6 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Widget 2: Quick Links */}
           <div>
             <h4 className="text-white text-base font-bold font-['Poppins'] mb-4 border-b border-gray-700 pb-2">
               Quick Links
@@ -95,7 +92,6 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Widget 3: Our Services */}
           <div>
             <h4 className="text-white text-base font-bold font-['Poppins'] mb-4 border-b border-gray-700 pb-2">
               Our Services
@@ -121,7 +117,6 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Widget 4: Contact info */}
           <div className="space-y-3">
             <h4 className="text-white text-base font-bold font-['Poppins'] mb-4 border-b border-gray-700 pb-2">
               Get In Touch
@@ -152,7 +147,6 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom copyright and legal bar */}
         <div className="pt-8 border-t border-[#2d3e52] flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
           <div>
             © 2026{" "}

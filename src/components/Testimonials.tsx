@@ -18,7 +18,6 @@ export const Testimonials: React.FC = () => {
   return (
     <section className="py-20 lg:py-28 bg-[#f8f9fa] relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-[#6b829d] mb-2 block">
             SEE WHAT SAYS OUR HAPPY CLIENTS
@@ -29,14 +28,12 @@ export const Testimonials: React.FC = () => {
           <div className="w-16 h-1 bg-[#f4c03b] mx-auto mt-4" />
         </div>
 
-        {/* Testimonial Card */}
         <div className="relative bg-white rounded-sm shadow-xl p-8 sm:p-14 border-t-4 border-[#f4c03b]">
           <div className="absolute top-8 right-8 text-[#f4c03b]/20">
             <Quote className="w-20 h-20 rotate-180" />
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-8 relative z-10">
-            {/* Avatar */}
             <div className="relative shrink-0">
               <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-[#f4c03b] shadow-md">
                 <img
@@ -51,7 +48,6 @@ export const Testimonials: React.FC = () => {
               </div>
             </div>
 
-            {/* Testimonial Body */}
             <div className="space-y-4 text-center md:text-left flex-1">
               <div className="flex items-center justify-center md:justify-start space-x-1">
                 {[...Array(active.rating)].map((_, i) => (
@@ -74,9 +70,7 @@ export const Testimonials: React.FC = () => {
             </div>
           </div>
 
-          {/* Navigation Controls */}
           <div className="mt-8 pt-6 border-t border-gray-100 flex items-center justify-between">
-            {/* Dots */}
             <div className="flex space-x-2">
               {TESTIMONIALS.map((_, idx) => (
                 <button
@@ -90,7 +84,6 @@ export const Testimonials: React.FC = () => {
               ))}
             </div>
 
-            {/* Prev / Next Arrows */}
             <div className="flex space-x-2">
               <button
                 onClick={prevTestimonial}

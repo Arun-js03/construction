@@ -38,7 +38,6 @@ export const Header: React.FC = () => {
 
   return (
     <header className="w-full relative z-50">
-      {/* Top bar */}
       <div className="bg-[#243344] text-[#a0aab5] text-xs font-normal border-b border-[#2d3e52]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center justify-between">
           <div className="flex items-center space-x-6">
@@ -108,8 +107,7 @@ export const Header: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Main Navigation Bar */}
+      
       <div
         className={`w-full transition-all duration-300 ${
           isScrolled
@@ -118,7 +116,6 @@ export const Header: React.FC = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Logo */}
           <a href="#home" className="flex items-center">
             <img
               src="https://xtratheme.com/elementor/construction-2/wp-content/uploads/sites/41/2020/01/logo-construction.png"
@@ -139,7 +136,6 @@ export const Header: React.FC = () => {
             />
           </a>
 
-          {/* Desktop Nav Items */}
           <nav className="hidden lg:flex items-center space-x-8">
             {NAV_ITEMS.map((item) => (
               <div
@@ -157,7 +153,6 @@ export const Header: React.FC = () => {
                   {item.children && <ChevronDown className="w-3.5 h-3.5 opacity-70" />}
                 </a>
 
-                {/* Submenu Dropdown */}
                 {item.children && activeDropdown === item.label && (
                   <div className="absolute top-full left-0 w-48 bg-white shadow-xl rounded-md py-2 border-t-2 border-[#f4c03b] transition-all animate-fadeIn">
                     {item.children.map((child) => (
@@ -176,7 +171,6 @@ export const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* Right Action Buttons */}
           <div className="hidden lg:flex items-center space-x-5">
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
@@ -194,7 +188,6 @@ export const Header: React.FC = () => {
             </a>
           </div>
 
-          {/* Mobile menu trigger */}
           <div className="flex items-center space-x-3 lg:hidden">
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
@@ -213,7 +206,6 @@ export const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Search Bar Overlay */}
         {isSearchOpen && (
           <div className="border-t border-gray-100 bg-[#f8f9fa] py-3 px-4 sm:px-8">
             <div className="max-w-3xl mx-auto flex items-center gap-2">
@@ -246,7 +238,6 @@ export const Header: React.FC = () => {
           </div>
         )}
 
-        {/* Mobile Navigation Drawer */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-gray-100 px-4 pt-4 pb-6 shadow-xl animate-fadeIn">
             <div className="flex flex-col space-y-3">

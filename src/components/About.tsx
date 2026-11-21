@@ -7,7 +7,6 @@ export const About: React.FC = () => {
     <section id="about" className="py-20 lg:py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left: Image with experience badge */}
           <div className="lg:col-span-6 relative">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
@@ -23,7 +22,6 @@ export const About: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
               </div>
 
-              {/* Decorative Experience Badge Overlay */}
               <div className="absolute -bottom-6 -right-4 sm:-bottom-8 sm:right-6 bg-[#f4c03b] text-[#243344] p-6 sm:p-8 rounded-sm shadow-2xl max-w-[220px] border-4 border-white">
                 <Award className="w-10 h-10 mb-2 text-[#243344]" />
                 <div className="text-3xl sm:text-4xl font-extrabold font-['Poppins'] leading-none">
@@ -36,7 +34,6 @@ export const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Right: Content details */}
           <div className="lg:col-span-6 space-y-6">
             <div>
               <span className="text-xs font-extrabold uppercase tracking-widest text-[#f4c03b] bg-[#243344] px-3 py-1 rounded inline-block mb-3">
@@ -52,7 +49,6 @@ export const About: React.FC = () => {
               Slogan creation for your construction company is crucial for the overall branding. And branding in today’s world can’t be ignored. We deliver unmatched structural integrity, modern architectural engineering, and transparent project timelines from ground break to handover.
             </p>
 
-            {/* Feature checklist */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               {ABOUT_BULLETS.map((bullet, idx) => (
                 <div key={idx} className="flex items-start gap-2.5">
@@ -62,7 +58,6 @@ export const About: React.FC = () => {
               ))}
             </div>
 
-            {/* Statistics Row */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-gray-200">
               {ABOUT_STATS.map((stat, idx) => (
                 <div key={idx} className="text-center sm:text-left">
@@ -76,7 +71,6 @@ export const About: React.FC = () => {
               ))}
             </div>
 
-            {/* Action buttons */}
             <div className="pt-4 flex items-center gap-4">
               <a
                 href="#services"

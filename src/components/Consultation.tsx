@@ -9,7 +9,6 @@ export const Consultation: React.FC = () => {
         backgroundImage: `linear-gradient(rgba(36, 51, 68, 0.90), rgba(36, 51, 68, 0.90)), url('https://xtratheme.com/elementor/construction-2/wp-content/uploads/sites/41/2020/01/row-bg.jpg')`,
       }}
     >
-      {/* Skewed accent banner lines */}
       <div className="hidden lg:block absolute -top-12 -left-20 w-48 h-96 bg-[#f4c03b]/20 transform -skew-x-12 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

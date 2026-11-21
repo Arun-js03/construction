@@ -19,7 +19,6 @@ export const Services: React.FC = () => {
   return (
     <section id="services" className="py-20 lg:py-28 bg-[#f8f9fa] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-[#6b829d] mb-2 block">
             WHAT WE CAN DO FOR YOU
@@ -30,7 +29,6 @@ export const Services: React.FC = () => {
           <div className="w-16 h-1 bg-[#f4c03b] mx-auto mt-4" />
         </div>
 
-        {/* 3 Columns Service Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {SERVICES.map((service) => (
             <div
@@ -38,7 +36,6 @@ export const Services: React.FC = () => {
               className="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
-                {/* Image Container with Zoom effect */}
                 <div className="relative h-60 overflow-hidden">
                   <img
                     src={service.image}
@@ -51,13 +48,11 @@ export const Services: React.FC = () => {
                   />
                   <div className="absolute inset-0 bg-[#243344]/20 group-hover:bg-transparent transition-colors" />
 
-                  {/* Icon badge floating on bottom-right of image */}
                   <div className="absolute -bottom-5 right-6 w-14 h-14 bg-[#f4c03b] rounded-sm flex items-center justify-center shadow-lg transform group-hover:rotate-6 transition-transform">
                     {getServiceIcon(service.icon)}
                   </div>
                 </div>
 
-                {/* Content */}
                 <div className="p-8 pt-10">
                   <h3 className="text-2xl font-bold text-[#243344] mb-3 font-['Poppins'] group-hover:text-[#f4c03b] transition-colors">
                     {service.title}
@@ -68,7 +63,6 @@ export const Services: React.FC = () => {
                 </div>
               </div>
 
-              {/* Bottom Read More Link */}
               <div className="px-8 pb-8 pt-2">
                 <a
                   href="#quote"

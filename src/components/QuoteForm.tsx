@@ -54,7 +54,6 @@ export const QuoteForm: React.FC = () => {
     <section id="quote" className="py-20 lg:py-28 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-          {/* Left Column Information */}
           <div className="lg:col-span-5 space-y-6">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-[#f4c03b] bg-[#243344] px-3 py-1 rounded inline-block mb-3">
@@ -102,7 +101,6 @@ export const QuoteForm: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Form Card */}
           <div className="lg:col-span-7 bg-[#f8f9fa] p-8 sm:p-10 rounded-sm shadow-lg border border-gray-100">
             {submitted ? (
               <div className="py-16 text-center space-y-4 animate-fadeIn">

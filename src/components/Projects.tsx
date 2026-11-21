@@ -13,7 +13,6 @@ export const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20 lg:py-28 bg-[#f8f9fa]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-xs font-bold uppercase tracking-widest text-[#6b829d] mb-2 block">
             WE ARE PROFESSIONAL
@@ -24,7 +23,6 @@ export const Projects: React.FC = () => {
           <div className="w-16 h-1 bg-[#f4c03b] mx-auto mt-4" />
         </div>
 
-        {/* Category Filter Tabs */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
           {PROJECT_CATEGORIES.map((cat) => (
             <button
@@ -41,14 +39,12 @@ export const Projects: React.FC = () => {
           ))}
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
               className="group relative bg-white rounded-sm overflow-hidden shadow hover:shadow-xl transition-all duration-300"
             >
-              {/* Image */}
               <div className="relative aspect-square overflow-hidden bg-gray-100">
                 <img
                   src={project.image}
@@ -60,7 +56,6 @@ export const Projects: React.FC = () => {
                   }}
                 />
 
-                {/* Yellow/Navy Hover Overlay */}
                 <div className="absolute inset-0 bg-[#243344]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
                   <span className="w-12 h-12 rounded-full bg-[#f4c03b] text-[#243344] flex items-center justify-center mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                     <ExternalLink className="w-5 h-5" />
@@ -74,7 +69,6 @@ export const Projects: React.FC = () => {
                 </div>
               </div>
 
-              {/* Card Footer Info */}
               <div className="p-4 border-t border-gray-100">
                 <h4 className="font-bold text-base text-[#243344] group-hover:text-[#f4c03b] transition-colors truncate">
                   {project.title}

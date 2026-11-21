@@ -18,7 +18,6 @@ export const Features: React.FC = () => {
 
   return (
     <section className="relative z-20 -mt-10 lg:-mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Section Subtitle Tag */}
       <div className="mb-3 text-center sm:text-left">
         <span className="text-xs font-bold uppercase tracking-widest text-[#6b829d]">
           FEATURES AT A GLANCE
@@ -31,12 +30,10 @@ export const Features: React.FC = () => {
             key={feature.id}
             className="group relative bg-[#243344] text-white p-8 sm:p-10 rounded-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden"
           >
-            {/* Background oversized number like in the reference template */}
             <div className="absolute right-4 bottom-2 text-7xl sm:text-8xl font-black text-white/5 select-none pointer-events-none font-['Poppins']">
               {feature.bgNumber}
             </div>
 
-            {/* Accent top border on hover */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-transparent group-hover:bg-[#f4c03b] transition-colors" />
 
             <div>
